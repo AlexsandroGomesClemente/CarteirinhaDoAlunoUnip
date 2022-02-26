@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carteira de Estudante Unip</title>
     <style>
-        *{
-            margin:0 ;
+        * {
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -39,14 +40,14 @@
             font-size: large;
             font-weight: 700;
             color: rgb(4, 4, 82);
-           
+
         }
 
-        #tr-first{
+        #tr-first {
             border-top: 1px solid rgb(0, 0, 245);
         }
 
-      tr #first {
+        tr #first {
             font-size: medium;
             font-weight: 700;
             color: rgb(4, 4, 82);
@@ -56,9 +57,45 @@
             color: rgb(4, 4, 82);
         }
 
-     
+
+        @media (min-width:450px) {
+            main {
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 460px;
+            }
+
+            table {
+
+                width: 389px;
+                margin-left: 11px;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            tbody {
+                margin-left: 275px;
+                display: flex;
+                flex-direction: column;
+            }
+
+
+        }
+
+        @media(min-width:390px) {
+            table {
+                margin-left: 275px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
+
 <body>
     <main>
         <div>
@@ -66,12 +103,12 @@
         </div>
 
         <div class="table-unip">
-            <table> 
+            <table>
 
                 <caption>Dados do Aluno</caption>
-                <tbody> 
+                <tbody class="bodytable">
                     <tr id="tr-first">
-                        <td  id="first">Matricula:</td>
+                        <td id="first">Matricula:</td>
                         <td id="second">2153984</td>
                     </tr>
                     <tr>
@@ -107,6 +144,7 @@
             </table>
         </div>
     </main>
-   
+
 </body>
+
 </html>
