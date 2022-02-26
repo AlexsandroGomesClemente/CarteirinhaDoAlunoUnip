@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira de Estudante Unip</title>
+    <style>
+        *{
+            margin:0 ;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .table-unip {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #tr-last {
+            border-bottom: 1px solid rgb(0, 0, 245);
+        }
+
+        tbody tr {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        tbody td {
+            margin-right: 150px;
+        }
+
+        table caption {
+            margin-bottom: 20px;
+            font-size: large;
+            font-weight: 700;
+            color: rgb(4, 4, 82);
+           
+        }
+
+        #tr-first{
+            border-top: 1px solid rgb(0, 0, 245);
+        }
+
+      tr #first {
+            font-size: medium;
+            font-weight: 700;
+            color: rgb(4, 4, 82);
+        }
+
+        td {
+            color: rgb(4, 4, 82);
+        }
+
+     
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <img height="120px" width="200px" src="./logo-UNIP-1024x683.png " alt="logo-unip">
+        </div>
+
+        <div class="table-unip">
+            <table> 
+
+                <caption>Dados do Aluno</caption>
+                <tbody> 
+                    <tr id="tr-first">
+                        <td  id="first">Matricula:</td>
+                        <td id="second">2153984</td>
+                    </tr>
+                    <tr>
+                        <td id="first">Nome:</td>
+                        <td id="second">ALEXSANDRO GOMES CLEMENTE</td>
+                    </tr>
+                    <tr>
+                        <td id="first">RG:</td>
+                        <td id="second">55.318.827-6</td>
+                    </tr>
+                    <tr>
+                        <td id="first">Nascimento:</td>
+                        <td id="second">03/06/1999</td>
+                    </tr>
+                    <tr>
+                        <td id="first">Curso:</td>
+                        <td id="second">43701-CIÊNCIA DA COMPUTAÇÃO(BACHARELADO)</td>
+                    </tr>
+                    <tr>
+                        <td id="first">Unidade:</td>
+                        <td id="second">9767-CAMPINAS-TAQUARAL</td>
+                    </tr>
+                    <tr>
+                        <td id="first">Carteirinha:</td>
+                        <td id="second">ATIVA</td>
+                    </tr>
+                    <tr id="tr-last">
+                        <td id="first">Validade:</td>
+                        <td id="second">Julho/2022</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </main>
+   
+</body>
+</html>
